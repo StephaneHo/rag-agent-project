@@ -22,3 +22,13 @@ dependencies = [
     "transformers>=5.4.0",
     "uvicorn>=0.42.0",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
+

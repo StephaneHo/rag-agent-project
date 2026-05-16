@@ -22,7 +22,8 @@ PIÈGE CLASSIQUE :
     racine ; les sous-objets mutables = headaches. Garde plat.
 """
 
-# from typing import TypedDict
-#
-# class AgentState(TypedDict):
-#     ...
+from typing import TypedDict
+
+
+class AgentState(TypedDict):
+    query: str

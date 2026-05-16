@@ -1,3 +1,5 @@
+from agent.state import AgentState
+
 """Tests de la structure AgentState — Red en premier !
 
 POURQUOI commencer par les tests du state ?
@@ -20,8 +22,7 @@ Tests à écrire :
         POURQUOI : on veut pouvoir faire `state["decisions_log"].append({...})`.
 """
 
-# import pytest
-# from backend.agent.state import AgentState
-#
-# def test_state_can_be_initialized_with_only_a_query():
-#     ...
+
+def test_state_can_be_initialized_with_only_a_query():
+    state = AgentState(query="...")
+    assert state["query"] == "..."

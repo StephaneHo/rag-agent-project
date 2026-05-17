@@ -27,3 +27,11 @@ from typing import TypedDict
 
 class AgentState(TypedDict):
     query: str
+    retrieved_docs: list
+    iteration: int
+
+
+def make_initial_state(query: str) -> AgentState:
+    retrieved_docs = []
+    iteration = 0
+    return AgentState(query=query, retrieved_docs=retrieved_docs, iteration=iteration)

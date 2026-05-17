@@ -5,9 +5,7 @@
 
 ## Pourquoi ce projet
 
-Démontrer une montée en compétence rapide sur les **agents IA** dans le cadre d'un
-process de recrutement Capgemini Défense (CDI consultant 70/30, suite à un
-entretien avec Vincent Moreau, expert agents IA).
+
 
 Cas d'usage : veille documentaire défense via des papiers ArXiv (AI / ML /
 cybersec à orientation défense).
@@ -100,9 +98,3 @@ Cela permet une comparaison directe **RAG basique vs agentic RAG** sur le
 même corpus, ce qui est aussi le récit de démo : "même infra, une couche
 agent, voici ce que ça change".
 
-## Mode de travail (cf. `CLAUDE.md`)
-
-- POURQUOI avant COMMENT (pédagogique).
-- TDD strict, Red → Green → Refactor.
-- Squelettes avec trous : Claude livre les structures et docstrings, l'utilisateur
-  code l'implémentation.

@@ -29,9 +29,16 @@ class AgentState(TypedDict):
     query: str
     retrieved_docs: list
     iteration: int
+    decisions_log: list
 
 
 def make_initial_state(query: str) -> AgentState:
     retrieved_docs = []
     iteration = 0
-    return AgentState(query=query, retrieved_docs=retrieved_docs, iteration=iteration)
+    decisions_log = []
+    return AgentState(
+        query=query,
+        retrieved_docs=retrieved_docs,
+        iteration=iteration,
+        decisions_log=decisions_log,
+    )
